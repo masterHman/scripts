@@ -16,5 +16,5 @@ set Min=%dt:~10,2%
 set Sec=%dt:~12,2%
 set stamp=%YYYY%-%MM%-%DD%_%HH%-%Min%-%Sec%
 
-if %isFolder%==true xcopy /ei "%~1"  "%~1_%stamp%"
+if %isFolder%==true xcopy /ei "%~1"  "%~1_%stamp%" /EXCLUDE:C:\Utilities\masterHman\scripts\xcopy_ignore.txt
 if %isFolder%==false copy "%~1" "%~n1_%stamp%%~x1"

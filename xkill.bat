@@ -1,1 +1,1 @@
-taskkill /IM /F %1
+taskkill /F /IM %1
