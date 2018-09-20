@@ -1,6 +1,6 @@
 @echo off
 
-call:pullFolder "C:\Users\Howard\source\WebFletch"
+call:pullFolder "C:\Code"
 
 pause
 EXIT /B %ERRORLEVEL%
